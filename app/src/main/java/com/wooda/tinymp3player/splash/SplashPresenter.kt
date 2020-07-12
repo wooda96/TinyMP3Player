@@ -1,4 +1,4 @@
-package com.wooda.tinymp3player.presenter
+package com.wooda.tinymp3player.splash
 
 import android.Manifest
 import android.app.Activity
@@ -8,7 +8,7 @@ import android.os.Build
 import android.provider.MediaStore
 import android.util.Log
 import androidx.core.app.ActivityCompat
-import com.wooda.tinymp3player.model.AudioModel
+import com.wooda.tinymp3player.splash.model.AudioModel
 import kotlinx.coroutines.*
 import java.lang.Exception
 

@@ -1,18 +1,9 @@
-package com.wooda.tinymp3player
+package com.wooda.tinymp3player.splash
 
-import android.Manifest
-import android.content.Context
-import android.content.pm.PackageManager
-import android.os.Build
 import android.os.Bundle
-import android.provider.MediaStore
-import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import com.wooda.tinymp3player.presenter.SplashPresenter
-import kotlinx.coroutines.*
-import java.lang.Exception
+import com.wooda.tinymp3player.R
 
 class SplashActivity : SplashPresenter.View, AppCompatActivity() {
 
