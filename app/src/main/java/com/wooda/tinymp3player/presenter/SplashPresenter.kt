@@ -12,7 +12,7 @@ import com.wooda.tinymp3player.model.AudioModel
 import kotlinx.coroutines.*
 import java.lang.Exception
 
-class SplashPresenter(val mActivity: Activity, val mSplashView: View) {
+class SplashPresenter(private val mActivity: Activity, private val mSplashView: View) {
 
     fun initializePlayList() {
 
