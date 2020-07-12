@@ -8,8 +8,7 @@ import android.os.Build
 import android.provider.MediaStore
 import android.util.Log
 import androidx.core.app.ActivityCompat
-import com.wooda.tinymp3player.AudioModel
-import com.wooda.tinymp3player.SplashActivity
+import com.wooda.tinymp3player.model.AudioModel
 import kotlinx.coroutines.*
 import java.lang.Exception
 

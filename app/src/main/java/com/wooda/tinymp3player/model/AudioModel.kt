@@ -1,4 +1,4 @@
-package com.wooda.tinymp3player
+package com.wooda.tinymp3player.model
 
 data class AudioModel(
     val path: String,
