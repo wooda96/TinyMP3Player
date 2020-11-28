@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.wooda.tinymp3player.R
+import com.wooda.tinymp3player.splash.services.PermissionService
 
 class SplashActivity : SplashPresenter.View, AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class SplashActivity : SplashPresenter.View, AppCompatActivity() {
 
         mStatusText = findViewById(R.id.statusMessage)
 
-        mPresenter = SplashPresenter(this, this)
+        mPresenter = SplashPresenter(this, this, PermissionService())
         mPresenter.initializePlayList()
     }
 

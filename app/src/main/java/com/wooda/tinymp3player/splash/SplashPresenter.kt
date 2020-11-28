@@ -9,14 +9,15 @@ import com.wooda.tinymp3player.splash.model.AudioModel
 import com.wooda.tinymp3player.splash.services.PermissionService
 import kotlinx.coroutines.*
 
-class SplashPresenter(private val mActivity: Activity, private val mSplashView: View) {
-
-    private val mPermissionService = PermissionService()
-
+internal class SplashPresenter(
+    private val mActivity: Activity,
+    private val mSplashView: View,
+    private val permissionService: PermissionService
+) {
     fun initializePlayList() {
 
         // check permission
-        mPermissionService.acquireReadExternalStoragePermission(
+        permissionService.acquireReadExternalStoragePermission(
             mActivity,
             { initializePlayListWithoutPermissionCheck() },
             {
@@ -80,7 +81,7 @@ class SplashPresenter(private val mActivity: Activity, private val mSplashView: 
     }
 
     fun onPermissionResultReceived(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
-        mPermissionService.onPermissionResultReceived(requestCode, permissions, grantResults)
+        permissionService.onPermissionResultReceived(requestCode, permissions, grantResults)
     }
 
     companion object {
